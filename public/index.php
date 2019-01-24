@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once "../vendor/autoload.php";
 require_once "../includes/rutas.php";
 
@@ -11,10 +10,8 @@ require_once "../includes/rutas.php";
  */
 
 //  variables de entorno
-$dotenv = new Dotenv\Dotenv("../");
-$dotenv->load();
 
-date_default_timezone_set(getenv('TIME_ZONE'));
+date_default_timezone_set("US/Central");
 
 /*
  *   Metodos Front Controller
